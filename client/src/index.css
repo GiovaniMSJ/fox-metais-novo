@@ -183,7 +183,7 @@
 
   /* Industrial card style */
   .industrial-card {
-    @apply bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-orange-500;
+    @apply bg-black border border-orange-600 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-white;
   }
 
   .industrial-card:hover {

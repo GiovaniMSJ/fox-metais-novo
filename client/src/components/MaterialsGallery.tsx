@@ -63,15 +63,15 @@ export default function MaterialsGallery() {
   const [selectedMaterial, setSelectedMaterial] = useState<string | null>(null);
 
   return (
-    <section id="materiais" className="py-20 bg-white">
+    <section id="materiais" className="py-20 bg-black">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-gray-900 mb-4">
+          <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-orange-600 mb-4">
             Nossos Materiais
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-orange-600 to-orange-400 mx-auto mb-6"></div>
-          <p className="font-roboto text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-roboto text-lg text-white max-w-2xl mx-auto">
             Trabalhamos com sucatas ferrosas e não ferrosas. Entre em contato e saiba mais sobre nossos serviços de coleta e comercialização.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function MaterialsGallery() {
               className="industrial-card cursor-pointer group"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden bg-gray-200">
+              <div className="relative h-64 overflow-hidden bg-gray-200 bg-black">
                 <img
                   src={material.image}
                   alt={material.name}
@@ -97,11 +97,11 @@ export default function MaterialsGallery() {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="font-montserrat font-bold text-2xl text-gray-900 mb-2">
+              <div className="p-6 bg-black">
+                <h3 className="font-montserrat font-bold text-2xl text-orange-600 mb-2">
                   {material.name}
                 </h3>
-                <p className="font-roboto text-gray-600 text-sm leading-relaxed">
+                <p className="font-roboto text-white text-sm leading-relaxed">
                   {material.description}
                 </p>
               </div>
@@ -111,7 +111,7 @@ export default function MaterialsGallery() {
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
-          <p className="font-roboto text-gray-600 mb-6">
+          <p className="font-roboto text-white mb-6">
             Tem material para vender? Entre em contato conosco!
           </p>
           <a href="#contato" className="btn-primary">
